@@ -14,13 +14,31 @@ body {
     background-size: cover;
 }
 
-.start-page {
+.flex-container-horizontal {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.flex-container-vertical {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.start-page {
+    display: block;
+}
+
+.black-chalkboard {
+    background-image: url(images/black-chalkboard.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 10% 0;
+    margin: 0 21%;
+}
+
 h1 {
+    font-size: 3em;
     text-align: center;
     vertical-align: middle;
     line-height: 10rem;
@@ -28,6 +46,7 @@ h1 {
 }
 
 h2 {
+    font-size: 2em;
     text-align: center;
 }
 
@@ -36,19 +55,31 @@ input {
     background-color: black;
 }
 
+#name-input {
+    height: 20px;
+    margin: 2% 10%;
+}
+
 button {
     border: solid 2px beige;
     background-color: black;
+    width: 50%;
+    font-size: 1.5rem;
 }
 
 .player-input-container {
     display: flex;
+    flex-direction: column;
 }
 
-/* .card-picker {
+.card-picker {
     display: flex;
-    justify-content: space-between;
-} */
+    justify-content: space-evenly;
+}
+
+.radio-label {
+    margin-left: -5%;
+}
 
 .hidden {
     display: none;
@@ -58,7 +89,7 @@ button {
     background-image: url(images/cadre-ardoise-murale.jpg);
     background-size: contain;
     background-repeat: no-repeat;
-    height: 300px;
+    height: 261px;
     padding: 30px;
 }
 
@@ -71,4 +102,5 @@ button {
 .board {
     display: flex;
     justify-content: space-around;
+    margin-top: 5%;
 }
