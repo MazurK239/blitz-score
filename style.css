@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Chalktastic';
+    src: url(fonts/chalktastic-font/Chalktastic-r78L.ttf);
+}
+
+* {
+    font-family: 'Chalktastic';
+    color: beige;
+}
+
+body {
+    background-image: url(images/depositphotos_64612339-stock-photo-blackboard-chalkboard-texture-empty-blank.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.start-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    vertical-align: middle;
+    line-height: 10rem;
+    height: 10rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+input {
+    border: solid 2px beige;
+    background-color: black;
+}
+
+button {
+    border: solid 2px beige;
+    background-color: black;
+}
+
+.player-input-container {
+    display: flex;
+}
+
+/* .card-picker {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.hidden {
+    display: none;
+}
+
+.player-board {
+    background-image: url(images/cadre-ardoise-murale.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    padding: 30px;
+}
+
+.player-title {
+    border-right:2px solid beige;
+    padding-right: 5px;
+    margin-right: 5px;
+}
+
+.board {
+    display: flex;
+    justify-content: space-around;
+}
