@@ -86,13 +86,14 @@ function displayBoard() {
         playerBoard.appendChild(document.createElement('hr'));
 
         let div = document.createElement("div");
-        div.style = "display: flex; flex-direction: column;"
+        div.style = "display: flex; flex-direction: column; heigth: 84%;"
 
         let score = document.createElement("span");
         score.textContent = player.score;
-        score.style = "font-size: 80px; text-align: center;";
+        score.style = "font-size: 80px; text-align: center; margin-top: 20%;";
         playerBoard.appendChild(score);
         scoreInput = document.createElement('input');
+        scoreInput.style = "margin-top: 20%; height: 20%;"
         scoreInput.addEventListener('keypress', (e) => {
             if (e.keyCode == 13) {
                 player.score += +e.target.value;

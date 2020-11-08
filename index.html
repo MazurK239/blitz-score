@@ -9,31 +9,36 @@
 <body>
     <div class="start-page">
         <h1>Welcome to Blitz score!</h1>
-        <div class="player-input-container">
-            <div style="display: flex; flex-direction: column;">
-                <label for="name-input" style="margin-right: 5px;">Enter the player's name:</label>
-                <input id="name-input" class="player-name-input" type="text", placeholder="Name", value="">
+        <div class="flex-container-horizontal black-chalkboard">
+            <div class="flex-container-vertical">
+                <div class="player-input-container">
+                    <label for="name-input" style="margin-right: 5px;">Enter the player's name and pick a card color:</label>
+                    <input id="name-input" class="player-name-input" type="text", placeholder="Name", value="">
+                    <div class="card-picker">
+                        <input type="radio" id="red" name="card-picker" value="red">
+                        <label class="radio-label" for="red">Red</label>
+                    
+                        <input type="radio" id="green" name="card-picker" value="green">
+                        <label class="radio-label" for="green">Green</label>
+                    
+                        <input type="radio" id="blue" name="card-picker" value="blue">
+                        <label class="radio-label" for="blue">Blue</label>
+                    
+                        <input type="radio" id="yellow" name="card-picker" value="yellow">
+                        <label class="radio-label" for="yellow">Yellow</label>
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row; margin: 10% 0;">
+                    <label for="win-points-input" style="margin-right: 5px;">Enter the winning score:</label>
+                    <input id="win-points-input" type="text", placeholder="Winning points", value="">
+                </div>
+                <button class="start-game-btn">Start game</button>
             </div>
-            <div class="card-picker">
-                <input type="radio" id="red" name="card-picker" value="red">
-                <label for="red">Red</label>
-            
-                <input type="radio" id="green" name="card-picker" value="green">
-                <label for="green">Green</label>
-            
-                <input type="radio" id="blue" name="card-picker" value="blue">
-                <label for="blue">Blue</label>
-            
-                <input type="radio" id="yellow" name="card-picker" value="yellow">
-                <label for="yellow">Yellow</label>
+            <div class="flex-container-vertical">
+                <label for="players-list">Registered players:</label>
+                <ul id="players-list" class="players"></ul>
             </div>
         </div>
-        <ul class="players"></ul>
-        <div style="display: flex; flex-direction: row;">
-            <label for="win-points-input" style="margin-right: 5px;">Enter the winning score:</label>
-            <input id="win-points-input" type="text", placeholder="Winning points", value="">
-        </div>
-        <button class="start-game-btn">Start game</button>
     </div>
     <div class="board-page hidden">
         <h2>Scores</h2>
